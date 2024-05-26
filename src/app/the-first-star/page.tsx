@@ -1,113 +1,84 @@
-import Image from "next/image";
+import About from "../../components/About";
+import Detail from "../../components/Detail";
+import Form from "../../components/Form";
+// import Header from "./Header";
+// import Notes from "./Notes";
+import Performers from "../../components/Performers";
+import Jumbotron from "../../components/Jumbotron";
 
-export default function Home() {
+function Home() {
+  const date = (
+    <>
+      <p>2024年4月7日(日)</p>
+      <p>&lt;昼の部&gt;13時 開演</p>
+      <p>&lt;夜の部&gt;17時 開演</p>
+      <p>※開場は、開演の30分前</p>
+    </>
+  );
+
+  const ticket = (
+    <>
+      <p>全席自由席</p>
+      <p>3,000円(1ドリンク付)</p>
+      <p>
+        ※小学生以下は無料(ドリンクがつきませんので、お飲み物をご持参ください)
+      </p>
+    </>
+  );
+
+  const place = (
+    <>
+      <p>ギャラリーNOBO</p>
+      <p>茨城県土浦市東崎町８−１６</p>
+      <p>(JR常磐線土浦駅より徒歩10分)</p>
+      <p>
+        <a
+          target="_blank"
+          style={{ color: "#1a0dab" }}
+          href="https://www.google.com/maps/place/%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%EF%BC%AE%EF%BC%AF%EF%BC%A2%EF%BC%AF/@36.0834893,140.2051812,17z/data=!3m1!4b1!4m6!3m5!1s0x602212cb401b9967:0xd90095c837c054cc!8m2!3d36.0834893!4d140.2077561!16s%2Fg%2F1tdxw3st?entry=ttu"
+        >
+          Google Mapを開く
+        </a>
+      </p>
+    </>
+  );
+
+  const notes = (
+    <>
+      <p>・各回、お席に限りがございます。お早めのご予約をお願いいたします</p>
+      <p>・チケット料金は、当日受付にて現金支払いとなります</p>
+      <p>・お車でお越しの際は、お店の前の駐車場(約30台)をご利用ください</p>
+      <p>
+        ・会場入り口にてスリッパに履き替えていただきます。スリッパはお持ちいただくか、会場のものをご利用ください
+      </p>
+      <p>
+        ・未就学児もご来場いただけます。会場内に和室がございますので、そちらもご利用ください
+      </p>
+    </>
+  );
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <>
+      {/* <Header /> */}
+      <Jumbotron title="Twinkle Live" subtitle="〜 The First Star 〜" />
+      <div className="p-0 text-slate-700 font-body">
+        <About />
+        <Performers />
+        <Detail
+          title="Twinkle Live 〜 The first star 〜"
+          date={date}
+          ticket={ticket}
+          place={place}
+          notes={notes}
+        />
+        {/* <Notes /> */}
+        <Form
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSeqZNQpsDRN548_1CBgtVUhsvVgZcNplKbbBP32ROjz-7Wsaw/viewform?usp=pp_url&entry.970489809=0%E6%9E%9A&entry.60362704=0%E6%9E%9A&entry.44785586=0%E6%9E%9A&entry.1854919750=0%E6%9E%9A&entry.619944004=0%E6%9E%9A&entry.610874221=0%E6%9E%9A"
+          }
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }
+
+export default Home;
