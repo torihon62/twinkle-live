@@ -5,6 +5,11 @@ import Form from "../../components/Form";
 // import Notes from "./Notes";
 import Performers from "../../components/Performers";
 import Jumbotron from "../../components/Jumbotron";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Twinkle Live 〜 The first star 〜",
+};
 
 function Home() {
   const date = (

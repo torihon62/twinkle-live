@@ -5,6 +5,11 @@ import Form from "../../components/Form";
 // import Notes from "./Notes";
 import Performers from "../../components/Performers";
 import Jumbotron from "../../components/Jumbotron";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Twinkle Live 〜 The second star 〜",
+};
 
 function Home() {
   const date = (
@@ -71,7 +76,7 @@ function Home() {
         {/* <Notes /> */}
         <Form
           href={
-            "https://docs.google.com/forms/d/e/1FAIpQLSeqZNQpsDRN548_1CBgtVUhsvVgZcNplKbbBP32ROjz-7Wsaw/viewform?usp=pp_url&entry.970489809=0%E6%9E%9A&entry.60362704=0%E6%9E%9A&entry.44785586=0%E6%9E%9A&entry.1854919750=0%E6%9E%9A&entry.619944004=0%E6%9E%9A&entry.610874221=0%E6%9E%9A"
+            "https://docs.google.com/forms/d/e/1FAIpQLSe4aVnRXtctivQtj-BPf0hzEFVR2514IIyoDdyHBh0Gqqxjvg/viewform?usp=pp_url&entry.1854919750=0%E6%9E%9A&entry.619944004=0%E6%9E%9A&entry.610874221=0%E6%9E%9A"
           }
         />
       </div>
