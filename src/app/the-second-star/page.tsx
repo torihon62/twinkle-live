@@ -62,7 +62,7 @@ function Home() {
   return (
     <>
       {/* <Header /> */}
-      <Jumbotron title="Twinkle Live" subtitle="〜 The Second Star 〜" />
+      <Jumbotron title="Twinkle Live" subtitle="~ The Second Star ~" />
       <div className="p-0 text-slate-700 font-body">
         <About />
         <Performers />
