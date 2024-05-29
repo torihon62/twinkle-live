@@ -6,6 +6,8 @@ import Form from "../../components/Form";
 import Performers from "../../components/Performers";
 import Jumbotron from "../../components/Jumbotron";
 import { Metadata } from "next";
+import hashizumeImage from "../../components/assets/hashizume.png";
+import tsukaTImage from "../../components/assets/tsuka-t.jpg";
 
 export const metadata: Metadata = {
   title: "Twinkle Live 〜 The first star 〜",
@@ -67,7 +69,7 @@ function Home() {
       <Jumbotron title="Twinkle Live" subtitle="〜 The First Star 〜" />
       <div className="p-0 text-slate-700 font-body">
         <About />
-        <Performers />
+        <Performers hashizumeImage={hashizumeImage} tsukaTImage={tsukaTImage} />
         <Detail
           title="Twinkle Live 〜 The first star 〜"
           date={date}

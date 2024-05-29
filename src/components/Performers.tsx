@@ -1,19 +1,22 @@
 "use client";
 
 /* eslint-disable react/jsx-key */
+import { StaticImageData } from "next/image";
 import PortfolioBox from "./PortfolioBox";
 import SectionContainer from "./SectionContainer";
 import SectionHead from "./SectionHead";
 import HomeIcon from "./icons/HomeIcon";
 import InstagramIcon from "./icons/InstagramIcon";
 import XIcon from "./icons/XIcon";
-// import hashizumeImage from "./assets/hashizume.png";
-import hashizumeImage from "./assets/_hashizume.png";
-import tsukaTImage from "./assets/tsuka-t.jpg";
 import Mic from "./icons/Mic";
 import Piano from "./icons/Piano";
 
-function Performers() {
+interface Props {
+  hashizumeImage: StaticImageData;
+  tsukaTImage: StaticImageData;
+}
+
+function Performers(props: Props) {
   const hashizumeSnsIcons = [
     <HomeIcon url="https://ayakas-voice-delivery.com/" />,
     <XIcon url="https://twitter.com/kuma_ga_suki" />,
@@ -61,7 +64,7 @@ function Performers() {
       <PortfolioBox
         play={"vocal"}
         name={"橋爪紋佳"}
-        imageSource={hashizumeImage.src}
+        imageSource={props.hashizumeImage.src}
         snsIcons={hashizumeSnsIcons}
         descriptions={hashizumeDescriptions}
       />
@@ -69,7 +72,7 @@ function Performers() {
       <PortfolioBox
         play={"piano"}
         name={"塚本英之(つかT)"}
-        imageSource={tsukaTImage.src}
+        imageSource={props.tsukaTImage.src}
         snsIcons={tsukaTSnsIcons}
         descriptions={tsukaTDescriptions}
       />
