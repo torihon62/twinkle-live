@@ -34,7 +34,7 @@ function Detail(props: Props) {
         <div className="w-full px-2 mt-5 md:mt-0">
           <h3 className="text-xl font-bold">会場</h3>
           {props.place}
-          <h3 className="mt-5 text-xl font-bold">注意事項</h3>
+          <h3 className="mt-5 text-xl font-bold">おねがい</h3>
           {props.notes}
         </div>
       </div>
