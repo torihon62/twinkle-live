@@ -46,15 +46,16 @@ function Home() {
   const date = (
     <>
       <p>2024年7月21日(日)</p>
-      <p>13時30分 開場</p>
-      <p>14時00分 開演</p>
+      <p>① 13:30 開演 (13:00 開場)</p>
+      <p>② 16:30 開演 (16:00 開場)</p>
+      <p>※ 各回休憩なし、約1時間の公演予定です。</p>
     </>
   );
 
   const ticket = (
     <>
       <p>大人(高校生以上)　2,500円(ドリンク付き)</p>
-      <p>小中学生　1,500円(ドリンク付き)</p>
+      <p>小中学生　1,000円(ドリンク無し)</p>
       <p>未就学児　無料(ドリンク無し)</p>
       <p>※ 全席自由席</p>
       <p>※ 駐車場 1台あたり300円</p>
@@ -65,6 +66,7 @@ function Home() {
     <>
       <p>BEK Lab(ベクラボ)</p>
       <p>茨城県つくば市金田88番地</p>
+      <p>Tel: 029-857-2798</p>
       <p>
         <a
           target="_blank"
@@ -79,11 +81,14 @@ function Home() {
 
   const notes = (
     <>
-      <p>・お支払いは当日、現金にてお願いいたします。</p>
-      <p>・未就学児の方は、お飲みものをご持参ください。</p>
-      <p>・会場入口にてお履き物を脱いでいただきます。</p>
-      <p>・敷地裏側に、駐車場(約20台)がございます。</p>
-      <p>　当日はスタッフが誘導いたします。</p>
+      <ul style={{ listStyle: "unset", paddingLeft: "22px" }}>
+        <li>お支払いは当日、現金にてお願いいたします。</li>
+        <li>中学生までのお子さまは、お飲みものをご持参ください。</li>
+        <li>会場入口にてお履き物を脱いでいただきます。</li>
+        <li>
+          敷地裏側に、駐車場(約20台)がございます。ご利用の方は、チケットのお申し込みの際に合わせてご予約ください。当日はスタッフが誘導いたします。
+        </li>
+      </ul>
     </>
   );
   return (
@@ -108,7 +113,7 @@ function Home() {
         {/* <Notes /> */}
         <Form
           href={
-            "https://docs.google.com/forms/d/e/1FAIpQLSc0h6DyNm8RCfUJE2PZ0VYRV43948NazpyHtUTG1oOo1SDiKA/viewform?usp=pp_url&entry.1854919750=0%E6%9E%9A&entry.619944004=0%E6%9E%9A&entry.610874221=0%E6%9E%9A"
+            "https://docs.google.com/forms/d/e/1FAIpQLSc0h6DyNm8RCfUJE2PZ0VYRV43948NazpyHtUTG1oOo1SDiKA/viewform?usp=pp_url&entry.1854919750=0%E6%9E%9A&entry.619944004=0%E6%9E%9A&entry.610874221=0%E6%9E%9A&entry.464172043=0%E6%9E%9A&entry.614062799=0%E6%9E%9A&entry.535492929=0%E6%9E%9A&entry.210897633=0%E5%8F%B0&entry.2032250707=0%E5%8F%B0"
           }
         />
       </div>
