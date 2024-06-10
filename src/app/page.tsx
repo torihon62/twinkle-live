@@ -7,6 +7,7 @@ import tsukaTImage from "../components/assets/tsuka-t.jpg";
 
 export const metadata: Metadata = {
   title: "Twinkle Live 〜 The first star 〜",
+  robots: "noindex, nofollow",
 };
 
 function Home() {

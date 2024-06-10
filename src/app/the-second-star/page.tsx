@@ -8,9 +8,22 @@ import Jumbotron from "../../components/Jumbotron";
 import { Metadata } from "next";
 import hashizumeImage from "../../components/assets/_hashizume.png";
 import tsukaTImage from "../../components/assets/tsuka-t.png";
+import ogImage from "../../components/assets/ogImage.png";
 
 export const metadata: Metadata = {
   title: "Twinkle Live 〜 The second star 〜",
+  openGraph: {
+    title: "Twinkle Live 〜 The second star 〜",
+    siteName: "Twinkle Live 〜 The second star 〜",
+    type: "website",
+    description: "ライブチケットのお申し込みはこちらから",
+    url: "https://twinkle-live.info/the-second-star",
+    images: ogImage.src,
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@kuma_ga_suki",
+  },
 };
 
 function Home() {
