@@ -11,6 +11,18 @@ import tsukaTImage from "../../components/assets/tsuka-t.jpg";
 
 export const metadata: Metadata = {
   title: "Twinkle Live 〜 The first star 〜",
+  openGraph: {
+    title: "Twinkle Live 〜 The first star 〜",
+    siteName: "Twinkle Live 〜 The first star 〜",
+    type: "website",
+    description: "ライブチケットのお申し込みはこちらから",
+    url: "https://twinkle-live.info/the-first-star",
+    images: "https://twinkle-live.info/assets/ogImage.png",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@kuma_ga_suki",
+  },
 };
 
 function Home() {

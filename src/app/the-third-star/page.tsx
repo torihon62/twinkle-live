@@ -11,8 +11,19 @@ import tsukaTImage from "../../components/assets/tsuka-t.png";
 
 export const metadata: Metadata = {
   title: "Twinkle Live 〜 The third star 〜",
+  openGraph: {
+    title: "Twinkle Live 〜 The third star 〜",
+    siteName: "Twinkle Live 〜 The third star 〜",
+    type: "website",
+    description: "ライブチケットのお申し込みはこちらから",
+    url: "https://twinkle-live.info/the-third-star",
+    images: "https://twinkle-live.info/assets/ogImage.png",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@kuma_ga_suki",
+  },
 };
-
 function Home() {
   const hashizumeDescriptions = [
     "声優・ナレーター",
