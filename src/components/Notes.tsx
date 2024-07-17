@@ -6,7 +6,9 @@ import SectionHead from "./SectionHead";
 function Notes() {
   return (
     <SectionContainer backgroundColor="white" nextBackgroundColor="#fcf6ee">
-      <SectionHead>運営事務局からのおしらせ</SectionHead>
+      <SectionHead>
+        <small>運営事務局からのおしらせ</small>
+      </SectionHead>
       <p>
         『Twinkle Live ~ The second star ~』
         は当初2回公演の予定でしたが、16:30の公演が定員に満たなかったため、13:30開演の1ステージのみとなりました。
