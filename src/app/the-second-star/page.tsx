@@ -2,12 +2,12 @@ import About from "../../components/About";
 import Detail from "../../components/Detail";
 import Form from "../../components/Form";
 // import Header from "./Header";
-// import Notes from "./Notes";
 import Performers from "../../components/Performers";
 import Jumbotron from "../../components/Jumbotron";
 import { Metadata } from "next";
 import hashizumeImage from "../../components/assets/_hashizume.png";
 import tsukaTImage from "../../components/assets/tsuka-t.png";
+import Notes from "@/components/Notes";
 
 export const metadata: Metadata = {
   title: "Twinkle Live 〜 The second star 〜",
@@ -108,6 +108,7 @@ function Home() {
       {/* <Header /> */}
       <Jumbotron title="Twinkle Live" subtitle="~ The Second Star ~" />
       <div className="p-0 text-slate-700 font-body">
+        <Notes />
         <About />
         <Performers
           hashizumeImage={hashizumeImage}
