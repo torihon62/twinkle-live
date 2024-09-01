@@ -15,7 +15,7 @@ interface Props {
 function Jumbotron(props: Props) {
   return (
     <section
-      className={`shadow-jumbotron bg-center bg-no-repeat bg-[url('/assets/background_xs.png')] sm:bg-[url('/assets/background_xs.png')] lg:bg-[url('/assets/background.png')] bg-gray-200 bg-blend-multiply`}
+      className={`shadow-jumbotron bg-center bg-no-repeat bg-[url('/assets/background_xs.jpg')] sm:bg-[url('/assets/background_xs.jpg')] lg:bg-[url('/assets/background.jpg')] bg-gray-200 bg-blend-multiply`}
     >
       <div className="px-4 mx-auto max-w-screen-xl text-center py-36 lg:py-56">
         <div className="py-10" />

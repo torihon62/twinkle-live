@@ -6,8 +6,8 @@ import Form from "../../components/Form";
 import Performers from "../../components/Performers";
 import Jumbotron from "../../components/Jumbotron";
 import { Metadata } from "next";
-import hashizumeImage from "../../components/assets/_hashizume.png";
-import tsukaTImage from "../../components/assets/tsuka-t.png";
+import hashizumeImage from "../../components/assets/_hashizume.jpg";
+import tsukaTImage from "../../components/assets/_tsuka-t.jpg";
 
 export const metadata: Metadata = {
   title: "Twinkle Live 〜 The fourth star 〜",
@@ -57,22 +57,26 @@ function Home() {
   const date = (
     <>
       <p>2024年10月27日(日)</p>
-      <p>時間未定</p>
+      <p>Open 18:00</p>
+      <p>Start 19:00</p>
     </>
   );
 
   const ticket = (
     <>
-      <p>未定</p>
+      <p>MC 1,000円 (＋別途ご飲食オーダー)</p>
+      <p className="text-sm">
+        MC(ミュージックチャージ)1,000円と、別途ご飲食のご注文をお願いいたします。
+      </p>
     </>
   );
 
   const place = (
     <>
-      <p>レストラン＆バー ROUGH-RIVER 〜DINER〜</p>
-      <p>茨城県土浦市中荒川沖町5-7ニッケイビル1F</p>
+      <p>Rough River Diner</p>
+      <p>茨城県土浦市中荒川沖町5-7</p>
       <br />
-      <p>JR常磐線　荒川沖駅西口　徒歩2分</p>
+      <p>JR常磐線 荒川沖駅より徒歩2分</p>
       <p>
         <a
           target="_blank"
@@ -87,7 +91,12 @@ function Home() {
 
   const notes = (
     <>
-      <p>・お支払いは当日、現金にてお願いいたします。</p>
+      <p>
+        ・30分の3ステージを予定しております。入れ替わり制ではございません。お時間の許す限り、お楽しみください。
+      </p>
+      <p>
+        ・お席に限りがございます。お越しの際は、事前のご予約をお願いいたします。
+      </p>
     </>
   );
   return (
@@ -110,11 +119,7 @@ function Home() {
           notes={notes}
         />
         {/* <Notes /> */}
-        <Form
-          href={
-            "https://docs.google.com/forms/d/e/1FAIpQLSe4aVnRXtctivQtj-BPf0hzEFVR2514IIyoDdyHBh0Gqqxjvg/viewform?usp=pp_url&entry.1854919750=0%E6%9E%9A&entry.619944004=0%E6%9E%9A&entry.610874221=0%E6%9E%9A"
-          }
-        />
+        <Form href={"https://forms.gle/vD6KnoVt9uEZj5As8"} />
       </div>
     </>
   );

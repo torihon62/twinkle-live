@@ -28,7 +28,7 @@ function Detail(props: Props) {
           <p>piano 塚本英之(つかT)</p>
           <h3 className="mt-5 text-xl font-bold">日時</h3>
           {props.date}
-          <h3 className="mt-5 text-xl font-bold">チケット</h3>
+          <h3 className="mt-5 text-xl font-bold">料金</h3>
           {props.ticket}
         </div>
         <div className="w-full px-2 mt-5 md:mt-0">
