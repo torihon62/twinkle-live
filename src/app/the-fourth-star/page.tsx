@@ -111,13 +111,13 @@ function Home() {
           tsukaTDescriptions={tsukaTDescriptions}
           tsukaTImage={tsukaTImage}
         />
-        <Detail
+        {/* <Detail
           title="Twinkle Live 〜 The fourth star 〜"
           date={date}
           ticket={ticket}
           place={place}
           notes={notes}
-        />
+        /> */}
         {/* <Notes /> */}
         {/* <Form href={"https://forms.gle/vD6KnoVt9uEZj5As8"} /> */}
       </div>
