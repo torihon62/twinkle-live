@@ -119,7 +119,7 @@ function Home() {
           notes={notes}
         />
         {/* <Notes /> */}
-        {/* <Form href={"https://forms.gle/vD6KnoVt9uEZj5As8"} /> */}
+        <Form href={"https://forms.gle/vD6KnoVt9uEZj5As8"} />
       </div>
     </>
   );
