@@ -8,6 +8,7 @@ import Jumbotron from "../../components/Jumbotron";
 import { Metadata } from "next";
 import hashizumeImage from "../../components/assets/_hashizume.jpg";
 import tsukaTImage from "../../components/assets/_tsuka-t.jpg";
+import Notes from "@/components/Notes";
 
 export const metadata: Metadata = {
   title: "Twinkle Live 〜 The fourth star 〜",
@@ -98,11 +99,26 @@ function Home() {
       </p>
     </>
   );
+
+  const impotantNote = (
+    <div className="text-left md:text-center">
+      <p>
+        恐れ入りますが、『Twinkle Live ~ The fourth star ~』
+        は満席となりました。
+      </p>
+      <p>楽しみにされていた皆さまに、深くお詫び申し上げます。</p>
+      <br />
+      <p>
+        また、キャンセル待ちのフォームを準備しておりますので、今しばらくお待ちください。
+      </p>
+    </div>
+  );
   return (
     <>
       {/* <Header /> */}
       <Jumbotron title="Twinkle Live" subtitle="~ The Fourth Star ~" />
       <div className="p-0 text-slate-700 font-body">
+        <Notes notes={impotantNote} />
         <About />
         <Performers
           hashizumeImage={hashizumeImage}
