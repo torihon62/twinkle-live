@@ -135,7 +135,12 @@ function Home() {
           notes={notes}
         />
         {/* <Notes /> */}
-        <Form href={"https://forms.gle/vD6KnoVt9uEZj5As8"} />
+
+        {/* 予約フォームは閉鎖 */}
+        {/* <Form href={"https://forms.gle/vD6KnoVt9uEZj5As8"} /> */}
+
+        {/* キャンセル待ちフォーム */}
+        <Form href={"https://forms.gle/pjjWGg38ES1m876r6"} />
       </div>
     </>
   );
