@@ -56,32 +56,31 @@ function Home() {
 
   const date = (
     <>
-      <p>2024年10月27日(日)</p>
-      <p>Open 18:00</p>
-      <p>Start 19:00</p>
+      <p className="pb-1">2024年12月22日(日)</p>
+      <p>【1回目】13:00開場 13:30開演</p>
+      <p>【2回目】16:00開場 16:30開演</p>
+      <p>※ 休憩あり80分を予定</p>
     </>
   );
 
   const ticket = (
     <>
-      <p>MC 1,000円 (＋別途ご飲食オーダー)</p>
-      <p className="text-sm">
-        MC(ミュージックチャージ)1,000円と、別途ご飲食のご注文をお願いいたします。
-      </p>
+      <p>大人　3,000円 (1ドリンク・橋爪サンタからのプチギフト付き)</p>
+      <p>中・高校生　1,000円 (ドリンクなし・プチギフト付き)</p>
+      <p>小学生以下　無料 (ドリンクなし・プチギフト付き)</p>
     </>
   );
 
   const place = (
     <>
-      <p>Rough River Diner</p>
-      <p>茨城県土浦市中荒川沖町5-7</p>
-      <br />
-      <p>JR常磐線 荒川沖駅より徒歩2分</p>
+      <p>ギャラリーNOBO</p>
+      <p>茨城県土浦市東崎町８−１６</p>
+      <p>(JR常磐線土浦駅より徒歩10分)</p>
       <p>
         <a
           target="_blank"
           style={{ color: "#1a0dab" }}
-          href="https://maps.app.goo.gl/1DXmkbqVXovTsd1P7"
+          href="https://www.google.com/maps/place/%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%EF%BC%AE%EF%BC%AF%EF%BC%A2%EF%BC%AF/@36.0834893,140.2051812,17z/data=!3m1!4b1!4m6!3m5!1s0x602212cb401b9967:0xd90095c837c054cc!8m2!3d36.0834893!4d140.2077561!16s%2Fg%2F1tdxw3st?entry=ttu"
         >
           Google Mapを開く
         </a>
@@ -91,11 +90,14 @@ function Home() {
 
   const notes = (
     <>
+      <p>・各回、お席に限りがございます。お早めのご予約をお願いいたします</p>
+      <p>・チケット料金は、当日受付にて現金支払いとなります</p>
+      <p>・お車でお越しの際は、お店の前の駐車場(約30台)をご利用ください</p>
       <p>
-        ・30分の3ステージを予定しております。入れ替わり制ではございません。お時間の許す限り、お楽しみください。
+        ・会場入り口にてスリッパに履き替えていただきます。スリッパはお持ちいただくか、会場のものをご利用ください
       </p>
       <p>
-        ・お席に限りがございます。お越しの際は、事前のご予約をお願いいたします。
+        ・未就学児もご来場いただけます。会場内に和室がございますので、そちらもご利用ください
       </p>
     </>
   );
@@ -123,17 +125,21 @@ function Home() {
           tsukaTDescriptions={tsukaTDescriptions}
           tsukaTImage={tsukaTImage}
         />
-        {/* <Detail
+        <Detail
           title="Twinkle Live 〜 The fifth star 〜"
           date={date}
           ticket={ticket}
           place={place}
           notes={notes}
-        /> */}
+        />
         {/* <Notes /> */}
 
         {/* 予約フォーム */}
-        {/* <Form href={"https://forms.gle/vD6KnoVt9uEZj5As8"} /> */}
+        <Form
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLScfLMH6lK_zTYl_2dS8NNTrxmo5W709f5Mmzjj6bGYRCNEHZw/viewform?usp=pp_url&entry.855639247=0%E6%9E%9A&entry.723210304=0%E6%9E%9A&entry.1799826848=0%E6%9E%9A&entry.1692645899=0%E6%9E%9A&entry.86153146=0%E6%9E%9A&entry.1693144841=0%E6%9E%9A"
+          }
+        />
       </div>
     </>
   );
