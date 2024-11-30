@@ -122,7 +122,7 @@ function Home() {
       {/* <Header /> */}
       <Jumbotron title="Twinkle Live" subtitle="~ The Second Star ~" />
       <div className="p-0 text-slate-700 font-body">
-        <Notes notes={impotantNote} />
+        <Notes title="運営事務局からのおしらせ" notes={impotantNote} />
         <About />
         <Performers
           hashizumeImage={hashizumeImage}

@@ -104,12 +104,14 @@ function Home() {
 
   const impotantNote = (
     <div className="text-left md:text-center">
-      <p>
-        恐れ入りますが、『Twinkle Live ~ The fifth star ~』 は満席となりました。
-      </p>
-      <p>現在は【キャンセル待ち】のお申込みを受付けております。</p>
+      <p>2回目の公演開始時刻に誤りがございました。</p>
       <br />
-      <p>ご希望の方は、ページ下部のフォームからお申込みください。</p>
+      <p>正しくは、</p>
+      <p>1回目：13:30</p>
+      <p>2回目：16:30</p>
+      <p>※ 開場は各開演の30分前</p>
+      <br />
+      <p>以上となります。</p>
     </div>
   );
 
@@ -118,6 +120,7 @@ function Home() {
       {/* <Header /> */}
       <Jumbotron title="Twinkle Live" subtitle="~ The Fifth Star ~" />
       <div className="p-0 text-slate-700 font-body">
+        <Notes title="お詫びと訂正" notes={impotantNote} />
         <About />
         <Performers
           hashizumeImage={hashizumeImage}
@@ -132,7 +135,6 @@ function Home() {
           place={place}
           notes={notes}
         />
-        {/* <Notes /> */}
 
         {/* 予約フォーム */}
         <Form
