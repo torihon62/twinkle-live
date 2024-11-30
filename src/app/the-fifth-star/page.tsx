@@ -106,7 +106,7 @@ function Home() {
     <div className="text-left md:text-center">
       <p>2回目の公演開始時刻に誤りがございました。</p>
       <br />
-      <p>正しくは、</p>
+      <p>正しくは、以下の通りです。</p>
       <p>1回目：13:30</p>
       <p>2回目：16:30</p>
       <p>※ 開場は各開演の30分前</p>
