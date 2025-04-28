@@ -4,7 +4,7 @@ import Form from "../../components/Form";
 // import Header from "./Header";
 // import Notes from "@/components/Notes";
 import Performers from "../../components/Performers";
-import Jumbotron from "../../components/Jumbotron";
+import Jumbotron6th from "@/components/Jumbotron6th";
 import { Metadata } from "next";
 import hashizumeImage from "../../components/assets/_hashizume.jpg";
 import tsukaTImage from "../../components/assets/_tsuka-t.jpg";
@@ -32,7 +32,7 @@ function Home() {
     "",
     "好きなものは、クマとビール。",
     "最近は、コーヒーの飲み比べにはまっている。",
-    "今年のワンマンライブを皮切りに、地元を中心としたライブ活動に意欲をみせている。",
+    "昨年のワンマンライブを皮切りに、地元を中心としたライブ活動に意欲をみせている。",
     "",
     "代表作は、「アバローのプリンセス エレナ(エレナ役)」、「スーパーキティ(ジニー)」、「しゅつどう！パジャマスク パワーヒーロー(アイバン役)」など。",
   ];
@@ -55,31 +55,27 @@ function Home() {
 
   const date = (
     <>
-      <p className="pb-1">2024年12月22日(日)</p>
-      <p>【1回目】13:00開場 13:30開演</p>
-      <p>【2回目】16:00開場 16:30開演</p>
-      <p>※ 休憩あり80分を予定</p>
+      <p className="pb-1">2025年6月8日(日)</p>
+      <p>18時開演 (開場は開演の30分前)</p>
     </>
   );
 
   const ticket = (
     <>
-      <p>大人　3,000円 (1ドリンク・橋爪サンタからのプチギフト付き)</p>
-      <p>中・高校生　1,000円 (ドリンクなし・プチギフト付き)</p>
-      <p>小学生以下　無料 (ドリンクなし・プチギフト付き)</p>
+      <p>入場料 おひとり様 1,500円 (+ 別途お食事代)</p>
     </>
   );
 
   const place = (
     <>
-      <p>ギャラリーNOBO</p>
-      <p>茨城県土浦市東崎町８−１６</p>
-      <p>(JR常磐線土浦駅より徒歩10分)</p>
+      <p>味処 八右衛門</p>
+      <p>茨城県土浦市荒川沖西2-5-4</p>
+      <p>(JR常磐線 荒川沖駅より徒歩1分)</p>
       <p>
         <a
           target="_blank"
           style={{ color: "#1a0dab" }}
-          href="https://www.google.com/maps/place/%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%EF%BC%AE%EF%BC%AF%EF%BC%A2%EF%BC%AF/@36.0834893,140.2051812,17z/data=!3m1!4b1!4m6!3m5!1s0x602212cb401b9967:0xd90095c837c054cc!8m2!3d36.0834893!4d140.2077561!16s%2Fg%2F1tdxw3st?entry=ttu"
+          href="https://maps.app.goo.gl/ofDgZ4keKpv4ePrA7"
         >
           Google Mapを開く
         </a>
@@ -89,37 +85,21 @@ function Home() {
 
   const notes = (
     <>
-      <p>・各回、お席に限りがございます。お早めのご予約をお願いいたします</p>
-      <p>・チケット料金は、当日受付にて現金支払いとなります</p>
-      <p>・お車でお越しの際は、お店の前の駐車場(約30台)をご利用ください</p>
-      <p>
-        ・会場入り口にてスリッパに履き替えていただきます。スリッパはお持ちいただくか、会場のものをご利用ください
-      </p>
-      <p>
-        ・未就学児もご来場いただけます。会場内に和室がございますので、そちらもご利用ください
-      </p>
+      <ul style={{ listStyle: "unset", paddingLeft: "22px" }}>
+        <li>入場料1,500円は、受付の際に現金にてお支払いください。</li>
+        <li>会場は、お履き物を脱いでいただく、掘りごたつの和室となっております。</li>
+        <li>お席の数に限りがございます。お早めのご予約をお待ちしております。</li>
+        <li>終演後も、お食事をお楽しみいただけます。よろしければ、橋爪と乾杯してやってください。</li>
+      </ul>
     </>
-  );
-
-  const impotantNote = (
-    <div className="text-left md:text-center">
-      <p>2回目の公演開始時刻に誤りがございました。</p>
-      <br />
-      <p>正しくは、以下の通りです。</p>
-      <p>1回目：13:30</p>
-      <p>2回目：16:30</p>
-      <p>※ 開場は各開演の30分前</p>
-      <br />
-      <p>お間違えのないよう、お越しください。</p>
-    </div>
   );
 
   return (
     <>
       {/* <Header /> */}
-      <Jumbotron title="Twinkle Live" subtitle="~ The Sixth Star ~" />
+      <Jumbotron6th title="Twinkle Live" subtitle="~ The Sixth Star ~" />
       <div className="p-0 text-slate-700 font-body">
-        {/* <About />
+        <About />
         <Performers
           hashizumeImage={hashizumeImage}
           hashizumeDescriptions={hashizumeDescriptions}
@@ -136,9 +116,9 @@ function Home() {
 
         <Form
           href={
-            "https://docs.google.com/forms/d/e/1FAIpQLScfLMH6lK_zTYl_2dS8NNTrxmo5W709f5Mmzjj6bGYRCNEHZw/viewform?usp=pp_url&entry.855639247=0%E6%9E%9A&entry.723210304=0%E6%9E%9A&entry.1799826848=0%E6%9E%9A&entry.1692645899=0%E6%9E%9A&entry.86153146=0%E6%9E%9A&entry.1693144841=0%E6%9E%9A"
+            "https://docs.google.com/forms/d/e/1FAIpQLScWogc_40J-HJ7KhtinWN0s7DqNfU5vgf-TZp2-7WbJ2aPK9Q/viewform?usp=pp_url&entry.1692645899=0%E6%9E%9A&entry.86153146=0%E6%9E%9A&entry.1693144841=0%E6%9E%9A"
           }
-        /> */}
+        />
       </div>
     </>
   );
