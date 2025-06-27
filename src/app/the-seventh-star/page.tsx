@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 function Home() {
   const hashizumeDescriptions = [
     "声優・ナレーター",
-    "株式会社プロダクション・エコー所属",
+    "株式会社プロダクション・テアトル・エコー所属",
     "茨城県土浦市出身",
     "",
     "好きなものは、クマとビール。",
