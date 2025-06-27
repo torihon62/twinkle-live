@@ -7,7 +7,7 @@ import Performers from "../../components/Performers";
 import Jumbotron from "../../components/Jumbotron";
 import { Metadata } from "next";
 import hashizumeImage from "../../components/assets/_hashizume.png";
-import tsukaTImage from "../../components/assets/tsuka-t.png";
+import tsukaTImage from "../../components/assets/tsuka-t2.jpeg";
 
 export const metadata: Metadata = {
   title: "Twinkle Live 〜 The seventh star 〜",
