@@ -10,12 +10,20 @@ import InstagramIcon from "./icons/InstagramIcon";
 import XIcon from "./icons/XIcon";
 import Mic from "./icons/Mic";
 import Piano from "./icons/Piano";
+import React from "react";
 
 interface Props {
   hashizumeImage: StaticImageData;
   hashizumeDescriptions: string[];
   tsukaTImage: StaticImageData;
   tsukaTDescriptions: string[];
+  guests?: {
+    name: string;
+    play: string;
+    image: StaticImageData;
+    snsIcons: JSX.Element[];
+    descriptions: string[];
+  }[];
 }
 
 function Performers(props: Props) {
@@ -49,6 +57,21 @@ function Performers(props: Props) {
         snsIcons={tsukaTSnsIcons}
         descriptions={props.tsukaTDescriptions}
       />
+      {props.guests &&
+        props.guests.map((guest, i) => {
+          return (
+            <React.Fragment key={`guest_${i}`}>
+              <div className="mt-20" />
+              <PortfolioBox
+                play={guest.play}
+                name={guest.name}
+                imageSource={guest.image.src}
+                snsIcons={guest.snsIcons}
+                descriptions={guest.descriptions}
+              />
+            </React.Fragment>
+          );
+        })}
     </SectionContainer>
   );
 }

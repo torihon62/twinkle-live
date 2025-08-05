@@ -11,6 +11,10 @@ interface Props {
   ticket: JSX.Element;
   place: JSX.Element;
   notes: JSX.Element;
+  guests: {
+    name: string;
+    play: string;
+  }[];
 }
 function Detail(props: Props) {
   return (
@@ -26,6 +30,12 @@ function Detail(props: Props) {
           <h3 className="mt-5 text-xl font-bold">出演</h3>
           <p>vocal 橋爪紋佳</p>
           <p>piano 塚本英之(つかT)</p>
+          {props.guests &&
+            props.guests.map((guest, i) => (
+              <p key={`guest-detail_${i}`}>
+                {guest.play} {guest.name}
+              </p>
+            ))}
           <h3 className="mt-5 text-xl font-bold">日時</h3>
           {props.date}
           <h3 className="mt-5 text-xl font-bold">料金</h3>
