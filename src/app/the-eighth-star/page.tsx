@@ -124,12 +124,19 @@ function Home() {
     </>
   );
 
+  const aboutDescriptions = [
+    "茨城県⼟浦市出⾝の声優・ナレーターの橋⽖紋佳と",
+    "茨城県を中⼼に多くのアーティストと共演するつかT、",
+    "そして今回はパーカッションの鈴⽊瞳を迎え、",
+    "ポップスからミュージカル、演歌まで、",
+    "幅広いジャンルの⾳楽をお届けします。",
+  ];
   return (
     <>
       {/* <Header /> */}
       <Jumbotron title="Twinkle Live" subtitle="~ The Eighth Star ~" />
       <div className="p-0 text-slate-700 font-body">
-        <About />
+        <About descriptions={aboutDescriptions} />
         <Performers
           hashizumeImage={hashizumeImage}
           hashizumeDescriptions={hashizumeDescriptions}

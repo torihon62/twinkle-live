@@ -5,7 +5,11 @@ import SectionHead from "./SectionHead";
 import Star1 from "./icons/Star1";
 import Star2 from "./icons/Star2";
 
-function About() {
+interface Props {
+  descriptions?: string[];
+}
+
+function About(props: Props) {
   return (
     <SectionContainer backgroundColor="#fcf6ee" nextBackgroundColor="white">
       <div className="mt-5"></div>
@@ -22,6 +26,16 @@ function About() {
         <div className="text-left sm:text-center pb-10">
           ･･･そんな願いを込めて、このタイトルを付けました。
         </div>
+        {props.descriptions &&
+          props.descriptions.map((description, i) => (
+            <div
+              key={`about-description_${i}`}
+              className="text-left sm:text-center"
+            >
+              {description}
+            </div>
+          ))}
+        {props.descriptions && <div className="pb-10"></div>}
         <div className="text-left sm:text-center pb-10">
           笑いあり、サプライズありのひと時―
         </div>
