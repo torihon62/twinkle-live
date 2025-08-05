@@ -11,7 +11,7 @@ interface Props {
   ticket: JSX.Element;
   place: JSX.Element;
   notes: JSX.Element;
-  guests: {
+  guests?: {
     name: string;
     play: string;
   }[];
